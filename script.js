@@ -1,3 +1,5 @@
+document.documentElement.classList.add("js-enabled");
+
 const header = document.querySelector("[data-header]");
 const toggle = document.querySelector(".nav-toggle");
 const menu = document.querySelector("[data-menu]");
@@ -98,3 +100,24 @@ if (!window.chatbase || window.chatbase("getState") !== "initialized") {
 
   window.chatbase = new Proxy(window.chatbase, {
     get(target, prop) {
+      if (prop === "q") {
+        return target.q;
+      }
+      return (...args) => target(prop, ...args);
+    },
+  });
+}
+
+const loadChatbaseWidget = () => {
+  const script = document.createElement("script");
+  script.src = "https://www.chatbase.co/embed.min.js";
+  script.id = "L7toqqP8wTwrLZAWO4f0Y";
+  script.domain = "www.chatbase.co";
+  document.body.appendChild(script);
+};
+
+if (document.readyState === "complete") {
+  loadChatbaseWidget();
+} else {
+  window.addEventListener("load", loadChatbaseWidget);
+}

@@ -1373,13 +1373,14 @@ h3 {
   text-underline-offset: 4px;
 }
 
-.reveal {
+.js-enabled .reveal {
   opacity: 0;
   transform: translateY(18px);
   transition: opacity 560ms ease, transform 560ms ease;
 }
 
-.reveal.is-visible {
+.js-enabled .reveal.is-visible,
+.reveal {
   opacity: 1;
   transform: translateY(0);
 }
