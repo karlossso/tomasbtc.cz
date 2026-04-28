@@ -3,166 +3,35 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Domény | Tomáš Němec</title>
-    <meta name="description" content="Přehled tematických domén Tomáše Němce z oblasti krypta, Bitcoinu, digitálních financí a online projektů.">
-    <meta name="author" content="Tomáš Němec">
-    <meta name="language" content="cs">
-    <meta name="theme-color" content="#090b10">
-
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="cs_CZ">
-    <meta property="og:site_name" content="Tomáš Němec">
-    <meta property="og:title" content="Domény | Tomáš Němec">
-    <meta property="og:description" content="Tematické domény a online projekty z oblasti krypta, Bitcoinu a digitálních financí.">
-    <meta property="og:url" content="https://tomasbtc.cz/domeny.html">
-    <meta property="og:image" content="https://tomasbtc.cz/assets/tomasbtc-logo-round.png">
-
-    <link rel="canonical" href="https://tomasbtc.cz/domeny.html">
+    <title>Tomáš Němec</title>
+    <meta name="description" content="Tomáš Němec">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#07090d">
     <link rel="icon" href="favicon.png" sizes="512x512" type="image/png">
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-    <link rel="preload" href="style.css" as="style">
-    <link rel="stylesheet" href="style.css">
+    <style>
+      :root { color-scheme: dark; }
+      * { box-sizing: border-box; }
+      body {
+        display: grid;
+        min-height: 100svh;
+        margin: 0;
+        place-items: center;
+        background: radial-gradient(circle at 50% 42%, rgba(247, 147, 26, 0.16), transparent 24rem), linear-gradient(180deg, #080b10 0%, #05070a 100%);
+        color: #f7f2ea;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      main { display: grid; justify-items: center; gap: 22px; padding: 32px; text-align: center; }
+      img { width: 78px; height: 78px; border-radius: 50%; box-shadow: 0 0 0 1px rgba(247, 147, 26, 0.38), 0 22px 80px rgba(247, 147, 26, 0.16); }
+      h1 { margin: 0; font-size: 3.8rem; font-weight: 950; line-height: 1; letter-spacing: 0; }
+      @media (max-width: 520px) { h1 { font-size: 2.7rem; } }
+    </style>
   </head>
   <body>
-    <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
-
-    <header class="site-header" data-header>
-      <nav class="nav shell" aria-label="Hlavní menu">
-        <a class="brand" href="index.html" aria-label="Tomáš Němec domů">
-          <img src="assets/tomasbtc-logo-round.png" alt="" width="48" height="48">
-          <span>
-            <strong>Tomáš Němec</strong>
-          </span>
-        </a>
-
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
-          <span class="nav-toggle-line"></span>
-          <span class="nav-toggle-line"></span>
-          <span class="nav-toggle-line"></span>
-          <span class="sr-only">Otevřít menu</span>
-        </button>
-
-        <div class="nav-links" id="site-menu" data-menu>
-          <a href="index.html#o-mne">O mně</a>
-          <a href="index.html#co-delam">Co dělám</a>
-          <a href="index.html#spoluprace">Spolupráce</a>
-          <a href="index.html#media">Média</a>
-          <a href="index.html#kontakt">Kontakt</a>
-          <a class="nav-subtle" href="domeny.html" aria-current="page">Domény</a>
-        </div>
-      </nav>
-    </header>
-
-    <main id="obsah">
-      <section class="section domain-page-hero">
-        <div class="shell domain-hero-grid">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Domény a online projekty</p>
-            <h1>Tematické domény bokem od hlavního webu.</h1>
-            <p>Vedle krypta mě zajímají i digitální aktiva v širším smyslu. Tohle je menší přehled domén, které mohou časem dostat vlastní projekt, spolupráci nebo nového majitele.</p>
-          </div>
-
-          <form class="domain-form reveal" id="dotaz" data-domain-form>
-            <h2>Rychlá zpráva</h2>
-            <p>Napište pár vět, přidejte svůj e-mail a zpráva se připraví do vašeho e-mailového klienta.</p>
-
-            <label>
-              Váš e-mail
-              <input type="email" name="email" placeholder="vas@email.cz" required>
-            </label>
-
-            <label>
-              Doména nebo téma
-              <select name="domain">
-                <option value="Obecný dotaz">Obecný dotaz</option>
-                <option value="btclab.cz">btclab.cz</option>
-                <option value="danekrypto.cz">danekrypto.cz</option>
-                <option value="depin.cz">depin.cz</option>
-                <option value="firemnibitcoin.cz">firemnibitcoin.cz</option>
-                <option value="kryptodane.cz">kryptodane.cz</option>
-                <option value="rychlekrypto.cz">rychlekrypto.cz</option>
-                <option value="stablecoiny.cz">stablecoiny.cz</option>
-              </select>
-            </label>
-
-            <label>
-              Zpráva
-              <textarea name="message" rows="5" placeholder="Zdravím, zajímá mě..." required></textarea>
-            </label>
-
-            <button class="button button-primary" type="submit">Připravit e-mail</button>
-          </form>
-        </div>
-      </section>
-
-      <section class="section section-muted">
-        <div class="shell domain-grid" aria-label="Přehled domén">
-          <article class="domain-card reveal">
-            <h2>btclab.cz</h2>
-            <p>Bitcoinové experimenty, poznámky nebo praktické materiály.</p>
-            <a href="#dotaz" data-domain-pick="btclab.cz">Zajímá mě</a>
-          </article>
-          <article class="domain-card reveal">
-            <h2>danekrypto.cz</h2>
-            <p>Evidence, daně a praktická orientace v krypto administrativě.</p>
-            <a href="#dotaz" data-domain-pick="danekrypto.cz">Zajímá mě</a>
-          </article>
-          <article class="domain-card reveal">
-            <h2>depin.cz</h2>
-            <p>Krátký název pro téma decentralizované fyzické infrastruktury.</p>
-            <a href="#dotaz" data-domain-pick="depin.cz">Zajímá mě</a>
-          </article>
-          <article class="domain-card reveal">
-            <h2>firemnibitcoin.cz</h2>
-            <p>Rozcestník pro firmy, které chtějí chápat Bitcoin prakticky.</p>
-            <a href="#dotaz" data-domain-pick="firemnibitcoin.cz">Zajímá mě</a>
-          </article>
-          <article class="domain-card reveal">
-            <h2>kryptodane.cz</h2>
-            <p>Zapamatovatelná doména pro daně, evidenci a pořádek v kryptu.</p>
-            <a href="#dotaz" data-domain-pick="kryptodane.cz">Zajímá mě</a>
-          </article>
-          <article class="domain-card reveal">
-            <h2>rychlekrypto.cz</h2>
-            <p>Krátké edukativní formáty, slovník nebo rychlá vysvětlení.</p>
-            <a href="#dotaz" data-domain-pick="rychlekrypto.cz">Zajímá mě</a>
-          </article>
-          <article class="domain-card reveal">
-            <h2>stablecoiny.cz</h2>
-            <p>Digitální měny, stablecoiny a jejich platební využití.</p>
-            <a href="#dotaz" data-domain-pick="stablecoiny.cz">Zajímá mě</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="section section-contact">
-        <div class="shell contact-panel reveal">
-          <div>
-            <p class="eyebrow">Kontakt</p>
-            <h2>Radši přímo?</h2>
-            <p>Napište mi na e-mail nebo se vraťte na hlavní stránku.</p>
-          </div>
-          <div class="contact-stack">
-            <a class="contact-tile" href="mailto:nemec@tomasbtc.cz?subject=Domény">
-              <span>E-mail</span>
-              <strong>nemec@tomasbtc.cz</strong>
-            </a>
-            <a class="contact-tile" href="index.html">
-              <span>Web</span>
-              <strong>Zpět na hlavní stránku</strong>
-            </a>
-          </div>
-        </div>
-      </section>
+    <main aria-label="Tomáš Němec">
+      <img src="assets/tomasbtc-logo-round.png" alt="">
+      <h1>Tomáš Němec</h1>
     </main>
-
-    <footer class="site-footer">
-      <div class="shell footer-inner">
-        <p>&copy; <span data-year></span> Tomáš Němec. tomasbtc.cz</p>
-        <p><a href="index.html">Hlavní stránka</a></p>
-      </div>
-    </footer>
-
     <script src="script.js"></script>
   </body>
 </html>
